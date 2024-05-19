@@ -14,3 +14,15 @@ for(let i = 0; i < length; i++) {
 
     container.appendChild(row);
 }
+
+container.addEventListener('mouseover', (event) => {
+    if(!event.target.classList.contains('square')) 
+        return;
+    event.target.style.backgroundColor = 'yellowgreen';
+});
+
+container.addEventListener('mouseout', (event) => {
+    if(!event.target.classList.contains('square')) 
+        return;
+    event.target.style.backgroundColor = 'yellow';
+});
