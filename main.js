@@ -3,7 +3,7 @@ let gridSize = 16;
 const container = document.querySelector('.container');
 
 function buildGrid(gridSize) {
-    container.innerHTML = '';
+    container.innerText = '';
     for(let i = 0; i < gridSize; i++) {
         const row = document.createElement('div');
         row.classList.add('row');
